@@ -4,4 +4,6 @@ from .models import Movie
 class MovieForm(forms.ModelForm):
     class Meta:
         model = Movie
-        fields = "__all__"
+        fields = ["title", "file"]
+
+    file = forms.FileField()

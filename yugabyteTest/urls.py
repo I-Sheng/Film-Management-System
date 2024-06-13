@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.urls import include, re_path, path
 from rest_framework import routers
-from testdb.views import UserViewSet, home, form_view
+from testdb.views import UserViewSet, home, add_movie, upload_success
 from django.contrib import admin
 
 router = routers.SimpleRouter(trailing_slash=False)
@@ -26,6 +26,7 @@ urlpatterns = [
     path('', home),
     path('admin/', admin.site.urls),
     re_path(r'^', include(router.urls)),
-    path('form/', form_view)
+    path('add_movie/', add_movie),
+    path('upload_success', upload_success),
 ]
 
