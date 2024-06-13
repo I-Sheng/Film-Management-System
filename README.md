@@ -25,3 +25,9 @@
 
 1. /movie
 2. /add_movie
+3. /admin (need to register an account first)
+
+## Register Account
+    ```python3
+    python3 manage.py createsuperuser
+    ```
