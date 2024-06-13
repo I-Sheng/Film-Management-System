@@ -24,4 +24,4 @@
 ## Endpoints
 
 1. /movie
-2. /form
+2. /add_movie
