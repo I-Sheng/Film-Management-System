@@ -21,13 +21,7 @@
    python3 manage.py runserver
    ```
 
-## Endpoints
+## Homepage
+* This is what you will see after go to the server base directory
+<img width="1648" alt="image" src="https://github.com/I-Sheng/yugabyteTest/assets/91582709/8433b0c1-20cd-4dde-93b4-04b593b53e6d">
 
-1. /movie
-2. /add_movie
-3. /admin (need to register an account first)
-
-## Register Account
-    ```python3
-    python3 manage.py createsuperuser
-    ```
