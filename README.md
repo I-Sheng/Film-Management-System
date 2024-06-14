@@ -31,8 +31,8 @@
 <img width="1619" alt="image" src="https://github.com/I-Sheng/yugabyteTest/assets/91582709/5c302193-0c17-497d-b2c9-b19382813ec9">
 
 ## Movie list Page
+* List all the movie in the database. You can go to the movie while directly press the title.
 <img width="1604" alt="image" src="https://github.com/I-Sheng/yugabyteTest/assets/91582709/739a7b4f-5051-43d5-9107-92b07281334b">
-List all the movie in the database. You can go to the movie while directly press the title.
 
 
 
