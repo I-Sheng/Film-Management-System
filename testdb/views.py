@@ -29,7 +29,7 @@ def add_movie(request):
     return render(request, 'add_movie.html', {'form': form})
 
 def upload_success(request):
-    return HttpResponse("<h1>Upload Success</h1>")
+    return render(request, "upload_success.html")
 
 def movies(request):
     model_data = Movie.objects.all()
