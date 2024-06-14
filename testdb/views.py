@@ -30,3 +30,22 @@ def add_movie(request):
 
 def upload_success(request):
     return HttpResponse("<h1>Upload Success</h1>")
+
+def movies(request):
+    model_data = Movie.objects.all()
+    movies_data = {"movies": model_data}
+    return render(request, "movies.html", movies_data)
+
+
+def display_movie(request, pk=None):
+    if pk == None:
+        menu_item = ''
+    else:
+        menu_item = Movie.objects.get(pk=pk)
+    return render(request, "movie_item.html", {"movie_item": menu_item})
+
+def video_stream(request, movie_id):
+    movie_item = Movie.objects.get(id=movie_id)
+    response = HttpResponse(movie_item.file, content_type='video/mp4')
+    response['Content-Disposition'] = 'inline; filename="some_filename.mp4"'
+    return response

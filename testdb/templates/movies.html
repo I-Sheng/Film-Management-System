@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<h1>Movies list</h1>
+<!--Begin col-->
+<div class="column">
+  <!-- Step 14: Create for loop -->
+  {% for item in movies %}
+  <p>
+    <!-- Step 14: Add DTL variable for name -->
+    <a href="{% url 'movie_item' pk=item.pk %}"> {{ item.title }} </a>
+  </p>
+  {% endfor %}
+  <!-- Step 14: End or loop -->
+</div>
+<!--End col-->
+{% endblock %}

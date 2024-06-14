@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section>
+  <article>
+    <h1>Movie</h1>
+    <span>
+      <a href="">Home</a> / <a href="{% url 'movies' %}">Menu</a>/
+      <!-- Step: Replace code here -->
+      {{movie_item.title}}
+    </span>
+    <!--Begin row-->
+    <div class="row">
+      <!--Begin col-->
+      <div class="column">
+        <video width="320" height="240" controls>
+          <source
+            src="{% url 'video_stream' movie_id=movie_item.id %}"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!--End col-->
+      <!--Begin col-->
+      <div class="column">
+        <p>Here is a cloumn</p>
+      </div>
+      <!--End col-->
+    </div>
+    <!--End row-->
+  </article>
+</section>
+{% endblock %}
