@@ -19,7 +19,7 @@ from . import views
 
 urlpatterns = [
     path('', views.home),
-    path('add_movie/', views.add_movie),
+    path('add_movie/', views.add_movie, name="add_movie"),
     path('upload_success', views.upload_success),
     path('movies/', views.movies, name="movies"),
     path('movie_item/<int:pk>/', views.display_movie, name="movie_item"),

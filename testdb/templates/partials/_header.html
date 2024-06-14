@@ -1,0 +1,11 @@
+{% load static %}
+<header>
+  <img src="{% static 'img/film.jpg' %}" class="film-img" />
+</header>
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="{% url 'add_movie' %}">Add Moive</a></li>
+    <li><a href="{% url 'movies' %}">Movie List</a></li>
+  </ul>
+</nav>

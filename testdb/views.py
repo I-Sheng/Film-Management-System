@@ -11,7 +11,7 @@ class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
 
 def home(request):
-    return HttpResponse("<h1>Welcome to home page</h1>")
+    return render(request, "index.html")
 
 
 def add_movie(request):
