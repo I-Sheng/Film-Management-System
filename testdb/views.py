@@ -20,7 +20,8 @@ def add_movie(request):
         if form.is_valid():
             movie = Movie(
                 title=form.cleaned_data['title'],
-                file=request.FILES['file'].read()  # Read the file content into binary
+                file=request.FILES['file'].read(),  # Read the file content into binary
+                description=form.cleaned_data['description']
             )
             movie.save()
             return redirect('/upload_success')  # Replace with your success page URL or view
