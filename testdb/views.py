@@ -2,13 +2,8 @@ from django.shortcuts import render, redirect
 from rest_framework import viewsets
 from django.http import HttpResponse
 
-from testdb.serializers import UserSerializer
 from testdb.models import Movie
 from testdb.forms import MovieForm
-
-class UserViewSet(viewsets.ModelViewSet):
-    queryset = Movie.objects.all()
-    serializer_class = UserSerializer
 
 def home(request):
     return render(request, "index.html")
