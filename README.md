@@ -1,4 +1,4 @@
-# YugabyteTest
+# Setup
 
 1. Install YugabyteDB and start it
    - [Here is the guide](https://docs.yugabyte.com/preview/quick-start/docker/)
